@@ -11,8 +11,8 @@ module.exports = {
       // Connection pool settings
       pool: {
         min: 2,
-        max: 20, // GOOD VALUE - will be broken later
-        acquireTimeoutMillis: 30000,
+        max: 3, // GOOD VALUE - will be broken later
+        acquireTimeoutMillis: 5000,
         idleTimeoutMillis: 30000,
       },
     },
@@ -31,8 +31,8 @@ module.exports = {
 
       pool: {
         min: 5,
-        max: 20, // GOOD VALUE - will be broken later
-        acquireTimeoutMillis: 30000,
+        max: 3, // GOOD VALUE - will be broken later
+        acquireTimeoutMillis: 5000,
         idleTimeoutMillis: 30000,
       },
     },
