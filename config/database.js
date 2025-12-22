@@ -10,8 +10,8 @@ module.exports = {
 
       // Connection pool settings
       pool: {
-        min: 2,
-        max: 3, // GOOD VALUE - will be broken later
+        min: 1,
+        max: 2, // Reduced from 20 for cost optimization
         acquireTimeoutMillis: 5000,
         idleTimeoutMillis: 30000,
       },
@@ -30,8 +30,8 @@ module.exports = {
       ssl: { rejectUnauthorized: false },
 
       pool: {
-        min: 5,
-        max: 3, // GOOD VALUE - will be broken later
+        min: 1,
+        max: 2, // Reduced from 20 for cost optimization - CAUSES TIMEOUTS!
         acquireTimeoutMillis: 5000,
         idleTimeoutMillis: 30000,
       },
